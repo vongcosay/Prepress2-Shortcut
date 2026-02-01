@@ -4,6 +4,10 @@ powershell.exe -windowstyle hidden -command "$path = Get-Clipboard; if (Test-Pat
 powershell.exe -windowstyle hidden -command "$path = (Get-Clipboard).Trim('\" '); if (Test-Path $path) { explorer.exe /select,$path } else { msg * 'Duong dan khong hop le!' }"
 
 
+Desktop -> New -> Shortcut
+powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -Command "& \"$env:USERPROFILE\Desktop\Do Nguyen\Data\OpenFolderWithLog.ps1\""
+
+
 C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%USERPROFILE%\Desktop\Do Nguyen\Data\OpenFolderWithLog.ps1"
 -------------------------------------------
 
